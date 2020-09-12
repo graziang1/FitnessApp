@@ -1,0 +1,22 @@
+
+  <h1>Water Tracker</h1>
+  <h4>Did you know that for your brain and body to feel fully functional and 
+      energized, you should be drinking 64 ounces (8 glasses) of water EVERYDAY?
+  </h4>
+
+  <h3>Enter the amount (in ounces) of water you've had today!</h3>
+  
+  <input id="myInput">
+  <button id="myBtn" onclick="javascript:alert('Keep up the hydration!')">
+    Submit
+  </button>
+  
+  <script>
+  var input = document.getElementById("myInput");
+  input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     document.getElementById("myBtn").click();
+    }
+  });
+  </script>
