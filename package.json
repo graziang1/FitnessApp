@@ -1,8 +1,8 @@
 {
-  "name": "Fitness-App",
   "repository": {
+    "name": "FitnessApp",
     "type": "git",
-    "url": "git+https://github.com/graziang1/Fitness-App.git"
+    "url": "https://github.com/graziang1/FitnessApp.git"
   },
   "license": "ISC",
   "scripts": {
