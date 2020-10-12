@@ -1,13 +1,18 @@
 <template>
   <div class="home">
-    <h1>Welcome to our home page</h1>
-
+    <br>
     <h1 class="title">
-      GG Fitness
+      Fitness At Ease
     </h1>
     <p class="subtitle">
-      My first website with <strong>Bulma</strong>
+      No more interrupted workouts by friends at your local gym... 
     </p>
+
+    <img class="images" src="../assets/IMG_4296.jpg">
+    <p class="subtitle">
+      Try <strong>Fitness At Ease</strong> instead for FREE!
+    </p>
+    <br>
   </div>
 </template>
 
@@ -20,3 +25,8 @@ export default {
   }
 }
 </script>
+<style>
+  .images{
+    position:relative;
+  }
+</style>

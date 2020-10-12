@@ -29,7 +29,9 @@
 
         <div class="navbar-dropdown">
           <a class="navbar-item">
-            Contact Us
+            <router-link to="/contactus">
+              Contact Us
+            </router-link>
           </a>
           <hr class="navbar-divider">
           <a class="navbar-item">
@@ -42,9 +44,9 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button">
-            <strong>Sign up</strong>
-          </a>
+            <router-link to="/signup"  class="button is-light" >
+                Sign up
+            </router-link>
             <router-link to="/login"  class="button is-light" >
                 Log in
             </router-link>
