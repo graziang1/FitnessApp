@@ -1,18 +1,16 @@
 <template>
-  <div class="home">
-    <br>
-    <h1 class="title">
-      Fitness At Ease
-    </h1>
-    <p class="subtitle">
-      No more interrupted workouts by friends at your local gym... 
-    </p>
-
-    <img class="images" src="../assets/IMG_4296.jpg">
-    <p class="subtitle">
-      Try <strong>Fitness At Ease</strong> instead for FREE!
-    </p>
-    <br>
+  <div class="parallax">
+    <div class="hometext">
+      <h1 class="title" style="color:aqua;">
+        FitnessAtEase
+      </h1>
+      <p class="subtitle" style="color:white;">
+        No more interrupted workouts at your local gym... 
+      </p>
+      <p class="subtitle" style="color:white;">
+        <center>Try <strong style="color:white;">FitnessAtEase</strong> instead for FREE!</center>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -26,7 +24,20 @@ export default {
 }
 </script>
 <style>
-  .images{
-    position:relative;
+  .hometext {
+    background-color: black; 
+    opacity: 0.8;
+    margin: 1px;
   }
+
+  .parallax {
+    background-image: url("../assets/parallax.jpg");
+    opacity: 0.8;
+    height: 964px;
+    /* Create parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 </style>

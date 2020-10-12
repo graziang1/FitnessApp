@@ -26,7 +26,7 @@
         </div>
         <div class="field">
         <p class="control">
-            <button class="button is-success">
+            <button class="button is-success" id="btn-login">
               Login
             </button>
         </p>
@@ -47,5 +47,9 @@ export default {
 </script>
 
 <style>
-    
+    #btn-login {
+        background-color:aqua;
+        border:1px;
+        color: black;
+    } 
 </style>
