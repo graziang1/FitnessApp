@@ -8,7 +8,7 @@
   <div class="field-body">
     <div class="field">
       <p class="control is-expanded has-icons-left">
-        <input class="input" type="text" placeholder="Name">
+        <input class="input is-info" type="text" placeholder="Name">
         <span class="icon is-small is-left">
           <i class="fas fa-user"></i>
         </span>
@@ -16,7 +16,7 @@
     </div>
     <div class="field">
       <p class="control is-expanded has-icons-left has-icons-right">
-        <input class="input is-success is-danger" type="email" placeholder="Email" value="example@fitnessatease.com">
+        <input class="input is-info" type="email" placeholder="Email" value="example@fitnessatease.com">
         <span class="icon is-small is-left">
           <i class="fas fa-envelope"></i>
         </span>
@@ -42,7 +42,7 @@
           </a>
         </p>
         <p class="control is-expanded">
-          <input class="input" type="tel" placeholder="Your phone number">
+          <input class="input is-info" type="tel" placeholder="Your phone number">
         </p>
       </div>
       <p class="help">Please include your area code.</p>
@@ -77,7 +77,7 @@
   <div class="field-body">
     <div class="field">
       <div class="control">
-        <input class="input is-danger" type="text" placeholder="e.g. How can I join FitnessAtEase">
+        <input class="input is-info" type="text" placeholder="e.g. How can I join FitnessAtEase">
       </div>
       <p class="help is-danger">
         This field is required
@@ -93,7 +93,7 @@
   <div class="field-body">
     <div class="field">
       <div class="control">
-        <textarea class="textarea" placeholder="Explain what we can help you with"></textarea>
+        <textarea class="textarea is-info" placeholder="Explain what we can help you with"></textarea>
       </div>
     </div>
   </div>
@@ -101,13 +101,13 @@
 
 <div class="field is-horizontal">
   <div class="field-label">
-    <!-- Left empty for spacing -->
+
   </div>
   <div class="field-body">
     <div class="field">
       <div class="control">
         <button class="button">
-          Send message
+          Send Message
         </button>
       </div>
     </div>
@@ -129,6 +129,6 @@ export default {
   .button {
     background-color:aqua;
     border:1px;
-    color: black;
+    color: darkslategray;
   }
 </style>

@@ -7,16 +7,16 @@
     <div class="select is-medium">
       <select>
         <option>-Select Workout Type-</option>
+        <option>Abdominals</option>
         <option>Back</option>
         <option>Biceps</option>
+        <option>Cardio</option>
         <option>Chest</option>
-        <option>Triceps</option>
-        <option>Shoulders</option>
         <option>Glutes</option>
         <option>Hamstrings</option>
         <option>Quads</option>
-        <option>Abdominals</option>
-        <option>Cardio</option>
+        <option>Shoulders</option>
+        <option>Triceps</option>
       </select>
     </div>
     <input class="input" type="text" placeholder="Enter specific exercise">
@@ -26,7 +26,7 @@
 </template>
 <script>
 export default {
-  name: 'ContactUs',
+  name: 'FitnessTracker',
   components: {
     
   }

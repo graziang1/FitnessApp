@@ -4,14 +4,14 @@
 <div class="field">
   <label class="label">Name</label>
   <div class="control">
-    <input class="input" type="Enter your full name" placeholder="Enter your full name">
+    <input class="input is-info" type="Enter your full name" placeholder="Enter your full name">
   </div>
 </div>
 
 <div class="field">
   <label class="label">Username</label>
   <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="text" placeholder="" value="Enter a username">
+    <input class="input is-info" type="text" placeholder="" value="Enter a username">
     <span class="icon is-small is-left">
       <i class="fas fa-user"></i>
     </span>
@@ -25,7 +25,7 @@
 <div class="field">
   <label class="label">Email</label>
   <p class="control has-icons-left has-icons-right">
-    <input class="input" type="email" placeholder="Email">
+    <input class="input is-info" type="email" placeholder="Email">
     <span class="icon is-small is-left">
       <i class="fas fa-envelope"></i>
     </span>
@@ -37,20 +37,11 @@
 <div class="field">
   <label class="label">Password</label>
   <p class="control has-icons-left">
-    <input class="input" type="password" placeholder="Password">
+    <input class="input is-info" type="password" placeholder="Password">
     <span class="icon is-small is-left">
       <i class="fas fa-lock"></i>
     </span>
   </p>
-</div>
-
-<div class="field">
-  <div class="control">
-    <label class="checkbox">
-      <input type="checkbox">
-      I agree to the <a href="#" style="color:aqua;"><u>terms and conditions</u></a>
-    </label>
-  </div>
 </div>
 
 <div class="field is-grouped">
@@ -76,6 +67,6 @@ export default {
   #btn-submit, #btn-cancel {
     background-color:aqua;
     border:1px;
-    color: black;
-  } 
+    color: darkslategray;
+  }
 </style>
