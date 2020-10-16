@@ -1,7 +1,6 @@
 <template>
-    <div id="LoginBadge">
-
-        <div class="media" v-if="session.user">
+  <div id="LoginBadge">
+    <div class="media" v-if="session.user">
         <div class="media-left">
             <figure class="image">
             <img :src="session.user.profile" alt="Placeholder image">
@@ -13,12 +12,8 @@
         </div>
         </div>
 
-
         <div class="buttons" v-else>
-          <a class="button">
-            <strong>Sign up</strong>
-          </a>
-            <router-link to="/login"  class="button is-light" >
+            <router-link to="/login"  class="button is-light" id="btn-login">
                 Log in
             </router-link>
         </div>
@@ -42,4 +37,10 @@ export default {
     .media-content {
         line-height: .95rem;
     }
+
+    #btn-login {
+    background-color:aqua;
+    border:1px;
+    color: darkslategray;
+  }
 </style>

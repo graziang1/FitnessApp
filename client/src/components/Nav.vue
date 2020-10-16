@@ -21,24 +21,7 @@
       <router-link to="/exercises" class="navbar-item">Exercises</router-link>      
       <router-link to="/fitness-tracker" class="navbar-item">Fitness Tracker</router-link>
       <router-link to="/water-tracker" class="navbar-item">Water Tracker</router-link>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            <router-link to="/contactus" style="color:black;">
-              Contact Us
-            </router-link>
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
-        </div>
-      </div>
+      <router-link to="/contactus" class="navbar-item">Contact Us</router-link>
     </div>
 
     <div class="navbar-end">
@@ -47,24 +30,27 @@
             <router-link to="/signup"  class="button is-light" >
                 Sign up
             </router-link>
-            <router-link to="/login"  class="button is-light" >
-                Log in
-            </router-link>
+            
+            <LoginBadge />
         </div>
       </div>
     </div>
+
   </div>
 </nav>
 
 </template>
 
 <script>
+import LoginBadge from "@/components/LoginBadge";
 export default {
   data: ()=> ({
       isActive: false
   }),
   methods: {
-
+  },
+  components: {
+    LoginBadge
   }
 }
 </script>

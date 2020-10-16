@@ -7,7 +7,7 @@
 
         <input type="range" value="0" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
         <output id="out">0</output> ounces
-        <br><br>
+        <br><br>        <br><br>        <br><br>        <br><br>        <br><br>
     </form>
   </body>
 </template>

@@ -27,12 +27,14 @@ const routes = [
   { 
     path: '/fitness-tracker', 
     name: 'FitnessTracker', 
-    component:  () => import(/* webpackChunkName: "signup" */ '../views/FitnessTracker.vue')
+    component:  () => import(/* webpackChunkName: "signup" */ '../views/FitnessTracker.vue'),
+    beforeEnter: checkSessionUser,
   },
   { 
     path: '/water-tracker', 
     name: 'WaterTracker', 
-    component:  () => import(/* webpackChunkName: "signup" */ '../views/WaterTracker.vue')
+    component:  () => import(/* webpackChunkName: "signup" */ '../views/WaterTracker.vue'),
+    beforeEnter: checkSessionUser,
   },
   { 
     path: '/exercises', 
@@ -47,3 +49,11 @@ const router = new VueRouter({
 })
 
 export default router
+
+function checkSessionUser (to, from, next) {
+  if(session.user){
+    next();
+  }else{
+    next('Login');
+  }
+}
