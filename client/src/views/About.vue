@@ -43,7 +43,14 @@
     </i></small>
   </div>
 </template>
-
+<script>
+export default {
+  name: 'About',
+  components: {
+    
+  }
+}
+</script>
 <style>
   img.wrap {
     float: left;

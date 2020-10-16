@@ -11,7 +11,7 @@
 <div class="field">
   <label class="label">Username</label>
   <div class="control has-icons-left has-icons-right">
-    <input class="input is-info" type="text" placeholder="" value="Enter a username">
+    <input class="input is-info" type="text" placeholder="Enter a username">
     <span class="icon is-small is-left">
       <i class="fas fa-user"></i>
     </span>
@@ -19,7 +19,6 @@
       <i class="fas fa-check"></i>
     </span>
   </div>
-  <p class="help is-success">This username is available</p>
 </div>
 
 <div class="field">
