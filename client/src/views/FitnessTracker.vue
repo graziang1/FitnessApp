@@ -40,28 +40,33 @@
 
     <div class="page">
       <h2 class="title is-2">Exercises & Progress Feed</h2>
-      <Post v-for=" (x, i) in posts " 
-        :key="i"
-        :i="i"
-        :post="x" /> 
+      <div class="columns">
+            <div class="column is-two-thirds">
+                <Post v-for=" (x, i) in posts " 
+                      :key="i"
+                      :i="i"
+                      :post="x" /> 
+            </div>
+            <div class="column is-one-third" @mouseenter="error">
+                <Sidebar />
+            </div>
+        </div>
   </div>
-
-
 </div>
 </template>
 <script>
+import Sidebar from "@/components/Sidebar";
 import Post from "@/components/Post";
 import { posts } from "@/models/feed";
 import session from "@/models/session";
 export default {
-    name: 'FitnessTracker',
     data(){
         return {
             posts
         }
     },
     components: {
-        Post
+        Sidebar, Post
     },
     methods: {
         error(){
@@ -70,14 +75,9 @@ export default {
     }
 }
 </script>
+
 <style>
-   .button {
-    background-color:aqua;
-    border:1px;
-    color: darkslategray;
-  }
-  /* Solid border */
-  hr.solid {
-    border-top: 3px solid aqua; 
-  }
+    .card {
+        margin-bottom: 30px ;
+    }
 </style>
