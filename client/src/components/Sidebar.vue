@@ -50,15 +50,25 @@
 
 
   <div class="panel-block">
-    <button class="button is-link is-info is-outlined is-fullwidth">
+    <button class="button is-link is-info is-outlined is-fullwidth" id="view">
+      View
+    </button>
+    <button class="button is-link is-info is-outlined is-fullwidth" id="add">
       Add
     </button>
-    <button class="button is-link is-info is-outlined is-fullwidth">
+    <button class="button is-link is-info is-outlined is-fullwidth" id="edit">
       Edit
     </button>
-    <button class="button is-link is-info is-outlined is-fullwidth">
+    <button class="button is-link is-info is-outlined is-fullwidth" id="delete">
       Delete
     </button>
   </div>
 </nav>
 </template>
+
+
+
+
+<style>
+
+</style>

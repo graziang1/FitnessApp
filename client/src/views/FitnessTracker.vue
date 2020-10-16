@@ -80,4 +80,9 @@ export default {
     .card {
         margin-bottom: 30px ;
     }
+    #inputGroupFileAddon04 {
+        background-color:aqua;
+        border:1px;
+        color: darkslategray;
+    }
 </style>

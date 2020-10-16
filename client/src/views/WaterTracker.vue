@@ -5,7 +5,7 @@
         <br>
         <img class="wrap" src="../assets/water.jpg" style="width:125px;height:125px;border-radius:50%;" alt="waterbottle">
 
-        <input type="range" value="0" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+        <input type="range" value="0" min="0" max="128" oninput="this.nextElementSibling.value = this.value">
         <output id="out">0</output> ounces
         <br><br>        <br><br>        <br><br>        <br><br>        <br><br>
     </form>
