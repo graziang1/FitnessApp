@@ -4,30 +4,39 @@
 */
 export const posts = [
     {
-        url: 'https://external-lga3-1.xx.fbcdn.net/safe_image.php?d=AQCUrZKvWahGsR6c&w=500&h=261&url=https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2020%2F10%2F04%2Fworld%2F04germany-attack%2F04germany-attack-facebookJumbo.jpg&cfs=1&ext=jpg&_nc_cb=1&_nc_hash=AQBlkXr-6JBttoqp',
-        message: `Sen. Marsha Blackburn, R-Tenn., used her opening statement to discuss Barrett in feminist terms.`,
+        url: 'https://64.media.tumblr.com/76447cba236f8ef3aa71de698ad0cdd7/7babfc47ab70d400-98/s1280x1920/311c739295d6686d981cca059941f01c4a9fcaac.jpg',
+        message: 'Shoulders',
         owner: {
             name: 'Gianna Graziano',
             handle: 'ggrazi_',
-            profile: 'https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/120552651_10102367831029710_8523278423201553541_n.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=Jnr3FRfM4FIAX8F5rC9&_nc_ht=scontent-lga3-1.xx&oh=14a477b3f03186158eccf30fe3a03bda&oe=5FA552C2'
+            profile: 'https://64.media.tumblr.com/7174fc1b0760acf76b88a940fcb80269/945f0943bc6a51cf-cb/s1280x1920/68d02db63b7324a4603a53d457d4ed701396629f.png'
         }
     },
     {
-        url: 'https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/120760987_10151536915804970_1182926407535554234_o.jpg?_nc_cat=110&_nc_sid=a26aad&_nc_ohc=sh6V5qAEC9gAX-vhK-F&_nc_ht=scontent-lga3-1.xx&oh=b7fe2b3a99bb299d72ed1bff8f602f8f&oe=5FA382D7',
-        message: '',
+        url: 'https://64.media.tumblr.com/a8eb3ad5b8afdb921a987b7837947c24/a39d311e3085ff8a-09/s1280x1920/ea5a9953a770f4e7fb73c96439917a0717d94aaa.jpg',
+        message: 'Biceps',
         owner: {
             name: 'Gianna Graziano',
             handle: 'ggrazi_',
-            profile: 'https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/120552651_10102367831029710_8523278423201553541_n.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=Jnr3FRfM4FIAX8F5rC9&_nc_ht=scontent-lga3-1.xx&oh=14a477b3f03186158eccf30fe3a03bda&oe=5FA552C2'
+            profile: 'https://64.media.tumblr.com/7174fc1b0760acf76b88a940fcb80269/945f0943bc6a51cf-cb/s1280x1920/68d02db63b7324a4603a53d457d4ed701396629f.png'
         }
     },
     {
-        url: "../assets/TProgress1.JPG",
+        url: 'https://64.media.tumblr.com/9a437dafe79e05b0859ebaed870a6246/3daba99431e611e3-02/s1280x1920/6cf633b35c1a0bfceaa42a557b9183a13b15de0b.png',
+        message: 'Hamstrings',
+        owner: {
+            name: 'Tom Lakis',
+            handle: 'vwlow3',
+            profile: 'https://64.media.tumblr.com/c2d75d8f7e6e21cd76db8ae66fed4345/65feb4beaab1cdd4-da/s1280x1920/91654f618537286e85328459766f501a24d20920.png'
+        }
+    },
+    {
+        url: 'https://64.media.tumblr.com/e255060a759c1134a39c926691355e04/28696ddd529a0a9b-60/s1280x1920/00c5415a4a4a71dba5117e730a12ef2a901e49bb.jpg',
         message: 'Back',
         owner: {
             name: 'Tom Lakis',
             handle: 'vwlow3',
-            profile: "../assets/TProfile.png"
+            profile: 'https://64.media.tumblr.com/c2d75d8f7e6e21cd76db8ae66fed4345/65feb4beaab1cdd4-da/s1280x1920/91654f618537286e85328459766f501a24d20920.png'
         }
     },
 ];

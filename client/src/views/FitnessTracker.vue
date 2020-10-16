@@ -35,7 +35,9 @@
         <button class="button btn-outline-secondary" type="button" id="inputGroupFileAddon04">Post</button>
       </div>
     </div>
-    <br><br>
+
+    <hr class="solid">
+
     <div class="page">
       <h2 class="title is-2">Exercises & Progress Feed</h2>
       <Post v-for=" (x, i) in posts " 
@@ -73,5 +75,9 @@ export default {
     background-color:aqua;
     border:1px;
     color: darkslategray;
+  }
+  /* Solid border */
+  hr.solid {
+    border-top: 3px solid aqua; 
   }
 </style>
