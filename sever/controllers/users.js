@@ -26,7 +26,6 @@ router
         users.add(
             req.body.FirstName, 
             req.body.LastName,
-            req.body.DOB,
             req.body.Password,
             6 /*User Type*/,
         ).then(newUser => { //creates new user
@@ -37,7 +36,6 @@ router
         users.update( req.params.id,
             req.body.FirstName, 
             req.body.LastName,
-            req.body.DOB,
             req.body.Password,
             6 /*User Type*/,
         ).then(newUser => { //creates new user

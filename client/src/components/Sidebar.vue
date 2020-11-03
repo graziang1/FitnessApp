@@ -12,9 +12,8 @@
     </p>
   </div>
   <p class="panel-tabs">
-    <a class="is-active">Followers</a>
-    <a class="is-info">Following</a>
-    <a class="is-info">Suggestions</a>
+    <a class="is-active">Friends That I Follow</a>
+    <a class="is-info">Suggested Users</a>
 
   </p>
   <a class="panel-block">

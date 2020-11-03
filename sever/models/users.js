@@ -15,15 +15,15 @@ async function getTypes(){
     return await mysql.query(`SELECT id, Name FROM Types WHERE Type_id = 2`);
 }
 
-async function add(FirstName, LastName, DOB, Password, User_Type){
-    const sql = 'INSERT INTO `Users` (`created_at`, `FirstName`, `LastName`, `DOB`, `Password`, `User_Type`) VALUES ? ;';
-    const params = [[new Date(), FirstName, LastName, new Date(DOB), Password, User_Type]];
+async function add(FirstName, LastName, Password, User_Type){
+    const sql = 'INSERT INTO `Users` (`created_at`, `FirstName`, `LastName`, `Password`, `User_Type`) VALUES ? ;';
+    const params = [[new Date(), FirstName, LastName, Password, User_Type]];
     return await mysql.query(sql, [params]);
 }
 
-async function update(id, FirstName, LastName, DOB, Password, User_Type){
+async function update(id, FirstName, LastName, Password, User_Type){
     const sql = 'UPDATE `Users` SET ? WHERE `id` = ?';
-    const params = { created_at: new Date(), FirstName, LastName, DOB: new Date(DOB), Password, User_Type };
+    const params = { created_at: new Date(), FirstName, LastName, Password, User_Type };
     return await mysql.query(sql, [params, id]);
 }
 
