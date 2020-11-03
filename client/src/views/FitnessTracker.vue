@@ -39,7 +39,9 @@
     <hr class="solid">
 
     <div class="page">
-      <h2 class="title is-2">Exercise & Progress Feed</h2>
+      <h2 class="title is-2">Exercise & Progress Feed
+          <button class="button btn-outline-secondary" style="float:right" type="button" id="inputGroupFileAddon04">View My Posts</button>
+      </h2>
       <div class="columns">
             <div class="column is-two-thirds">
                 <Post v-for=" (x, i) in posts " 

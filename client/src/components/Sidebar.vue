@@ -12,7 +12,6 @@
     </p>
   </div>
   <p class="panel-tabs">
-    <a class="is-info">My Posts</a>
     <a class="is-active">Followers</a>
     <a class="is-info">Following</a>
     <a class="is-info">Suggestions</a>
