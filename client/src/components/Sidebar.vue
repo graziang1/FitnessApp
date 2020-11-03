@@ -1,27 +1,28 @@
 <template>
     <nav class="panel">
   <p class="panel-heading">
-    User Management
+
   </p>
   <div class="panel-block">
     <p class="control has-icons-left">
-      <input class="input is-info" type="text" placeholder="Search">
+      <input class="input is-info" type="text" placeholder="Search Users">
       <span class="icon is-left">
         <i class="fas fa-search" aria-hidden="true"></i>
       </span>
     </p>
   </div>
   <p class="panel-tabs">
-    <a class="is-active">All</a>
-    <a class="is-active">Public</a>
-    <a class="is-active">Private</a>
+    <a class="is-info">My Posts</a>
+    <a class="is-active">Followers</a>
+    <a class="is-info">Following</a>
+    <a class="is-info">Suggestions</a>
 
   </p>
   <a class="panel-block">
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
     </span>
-    ggrazi_
+    megmiiichel
   </a>
   <a class="panel-block">
     <span class="panel-icon">

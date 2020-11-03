@@ -23,7 +23,7 @@
     </div>
     </div>
     
-    <input class="input is-info" type="text" placeholder="Enter details of exercise(s) completed">
+    <input class="input is-info" type="text" placeholder="Enter details of exercise(s) completed  (Optional)">
     <br><br>
     <div class="input-group">
       <div class="custom-file">
@@ -39,7 +39,7 @@
     <hr class="solid">
 
     <div class="page">
-      <h2 class="title is-2">Exercises & Progress Feed</h2>
+      <h2 class="title is-2">Exercise & Progress Feed</h2>
       <div class="columns">
             <div class="column is-two-thirds">
                 <Post v-for=" (x, i) in posts " 

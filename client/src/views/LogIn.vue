@@ -55,9 +55,5 @@ export default {
 </script>
 
 <style>
-    #btn-login {
-        background-color:aqua;
-        border:1px;
-        color: darkslategray;
-    }
+
 </style>
