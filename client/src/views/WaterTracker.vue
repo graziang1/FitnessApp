@@ -16,7 +16,6 @@
 export default {
   name: 'WaterTracker',
   components: {
-    
   }
 }
 

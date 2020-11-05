@@ -13,61 +13,45 @@
   </div>
   <p class="panel-tabs">
     <a class="is-active">Friends That I Follow</a>
-    <a class="is-info">Suggested Users</a>
-
+    <a class="is-info" style="color: black">Suggested Users</a>
   </p>
   <a class="panel-block">
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
     </span>
     megmiiichel
+    <button class="button is-link is-info is-outlined" style="position: absolute; right: 0;" id="edit">Unfollow</button>
   </a>
   <a class="panel-block">
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
     </span>
     vwlow3
+    <button class="button is-link is-info is-outlined" style="position: absolute; right: 0;" id="edit">Unfollow</button>
   </a>
   <a class="panel-block">
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
     </span>
     brittanyrose8
+    <button class="button is-link is-info is-outlined" style="position: absolute; right: 0;" id="edit">Unfollow</button>
   </a>
   <a class="panel-block">
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
     </span>
     glakis337
+    <button class="button is-link is-info is-outlined" style="position: absolute; right: 0;" id="edit">Unfollow</button>
   </a>
     <a class="panel-block">
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
     </span>
     ashalee4343
+    <button class="button is-link is-info is-outlined" style="position: absolute; right: 0;" id="edit">Unfollow</button>
   </a>
-
-
-  <div class="panel-block">
-    <button class="button is-link is-info is-outlined is-fullwidth" id="view">
-      View
-    </button>
-    <button class="button is-link is-info is-outlined is-fullwidth" id="add">
-      Add
-    </button>
-    <button class="button is-link is-info is-outlined is-fullwidth" id="edit">
-      Edit
-    </button>
-    <button class="button is-link is-info is-outlined is-fullwidth" id="delete">
-      Delete
-    </button>
-  </div>
 </nav>
 </template>
 
-
-
-
 <style>
-
 </style>
