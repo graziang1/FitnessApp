@@ -1,7 +1,7 @@
 <template>
   <div class="fitnesstracker">
     <br>
-    <h2 class="title is-2">Log completed exercises or progress photos here!</h2>
+    <h2 class="title is-2">Workouts & Progress Photos Log</h2>
     <div class="field">
     <div class="control">
       <div class="select is-info">
@@ -44,7 +44,7 @@
     <hr class="solid">
 
     <div class="page">
-      <h2 class="title is-2">Exercise & Progress Feed
+      <h2 class="title is-2">Feed
           <button class="button btn-outline-secondary" style="float:right" type="button" id="inputGroupFileAddon04">View My Posts</button>
       </h2>
       <div class="columns">
