@@ -2,7 +2,14 @@
 <form>
 <br>
 <div class="field">
-  <label class="label">Name</label>
+  <label class="label">First Name</label>
+  <div class="control">
+    <input class="input is-info" type="Enter your full name" placeholder="Enter your full name">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Last Name</label>
   <div class="control">
     <input class="input is-info" type="Enter your full name" placeholder="Enter your full name">
   </div>

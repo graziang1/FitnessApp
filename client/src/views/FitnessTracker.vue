@@ -22,9 +22,14 @@
       </div>
     </div>
     </div>
+
     
-    <input class="input is-info" type="text" placeholder="Enter details of exercise(s) completed  (Optional)">
-    <br><br>
+    <input class="input is-info" type="text" placeholder="Exercise Completed"><br><br>
+    <input class="input is-info" type="text" placeholder="Location"><br><br>
+    <input class="input is-info" type="text" placeholder="Workout Duration"><br><br>
+    <input class="input is-info" type="text" placeholder="# of Sets Completed"><br><br>
+    <input class="input is-info" type="text" placeholder="# of Reps Completed"><br><br>
+    <input class="input is-info" type="text" placeholder="Distance Covered"><br><br>
     <div class="input-group">
       <div class="custom-file">
         <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
@@ -37,7 +42,7 @@
     </div>
 
     <hr class="solid">
-    
+
     <div class="page">
       <h2 class="title is-2">Exercise & Progress Feed
           <button class="button btn-outline-secondary" style="float:right" type="button" id="inputGroupFileAddon04">View My Posts</button>
