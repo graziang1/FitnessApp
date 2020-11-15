@@ -41,8 +41,6 @@ app.use( (err, req, res, next) =>{
     res.status(err.status || 500).send( { message: err.message } )
 } )
 
-
-
 //  Init
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
