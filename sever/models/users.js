@@ -1,5 +1,6 @@
 const mysql = require('./mysql');
-const PREFIX = process.env.MYSQL_TABLE_PREFIX || 'Fit2020_';
+const PREFIX = process.env.MYSQL_TABLE_PREFIX || 'Fitness_';
+const Types = { ADMIN:5, USER:6 };
 
 //const data = [{ name: 'Moshe', age: 43}, { name: 'Biden', age: 78 }]
 
@@ -39,4 +40,4 @@ async function remove(id){
 
 const search = async q => await mysql.query(`SELECT id, FirstName, LastName FROM ${PREFIX}Users WHERE LastName LIKE ? OR FirstName LIKE ?; `, [`%${q}%`, `%${q}%`]);
 
-module.exports = { getAll, get, add, update, remove, getTypes, search }
+module.exports = { getAll, get, add, update, remove, getTypes, search, Types }
