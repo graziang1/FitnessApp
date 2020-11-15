@@ -27,7 +27,7 @@ router
             req.body.FirstName, 
             req.body.LastName,
             req.body.Password,
-            6 /*User Type*/,
+            users.Types.USER,
         ).then(newUser => { //creates new user
             res.send( newUser ); //returns new user
         }).catch(next)
@@ -37,7 +37,7 @@ router
             req.body.FirstName, 
             req.body.LastName,
             req.body.Password,
-            6 /*User Type*/,
+            users.Types.USER,
         ).then(newUser => { //creates new user
             res.send( newUser ); //returns new user
         }).catch(next)

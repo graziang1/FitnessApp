@@ -20,5 +20,5 @@ const query = (sql, binding) => {
       });
     });
   };
-
+  
 module.exports = { pool, query };
