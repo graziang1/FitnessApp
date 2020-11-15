@@ -22,7 +22,16 @@
       <router-link to="/fitness-tracker" class="navbar-item">Fitness Tracker</router-link>
       <router-link to="/water-tracker" class="navbar-item">Water Tracker</router-link>
       <router-link to="/contactus" class="navbar-item">Contact Us</router-link>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> Admin </a>
+        <div class="navbar-dropdown">
+          <router-link to="/users"  class="navbar-item" >Users</router-link>
+        </div>
+      </div>
+      
     </div>
+
+    
 
     <div class="navbar-end">
       <div class="navbar-item">
