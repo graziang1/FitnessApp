@@ -32,6 +32,18 @@ router
             res.send( newUser ); //returns new user
         }).catch(next)
     })
+    .post('/register', (req, res, next) => {
+        users.register(
+            req.body.FirstName,
+            req.body.LastName, 
+            req.body.DOB, 
+            req.body.Password, 
+            users.Types.USER,
+            req.body.Email 
+        ).then(newUser => {
+            res.send( newUser );
+        }).catch(next)
+    })
     .put('/:id', (req, res, next) => {
         users.update( req.params.id,
             req.body.FirstName, 
