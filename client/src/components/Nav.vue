@@ -28,8 +28,9 @@
           <router-link to="/users"  class="navbar-item" >Users</router-link>
         </div>
       </div>
-      
     </div>
+
+  </div>
 
     
 
@@ -45,7 +46,7 @@
       </div>
     </div>
 
-  </div>
+
 </nav>
 
 </template>
