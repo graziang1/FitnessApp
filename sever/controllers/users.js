@@ -5,7 +5,7 @@ const router = express.Router();
 
 router
     .get('/', (req, res, next) => { //anyone who comes to this controller and wants to get info, theres a function
-        users.getAll().then(x=> res.send( x ) )
+        users.getAll().then(x=> res.send( x.map(user=> ({ ...user, Password: undefined}) ) ) )
         .catch(next);
     })
     .get('/:id', (req, res, next) => { 
@@ -41,7 +41,7 @@ router
             users.Types.USER,
             req.body.Email 
         ).then(newUser => {
-            res.send( newUser );
+            res.send(  { ...newUser, Password: undefined }  );
         }).catch(next)
     })
     .put('/:id', (req, res, next) => {
