@@ -79,7 +79,7 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Exercise_Types`
+-- Table `ExerciseTypes`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Fitness_ExerciseTypes` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -92,15 +92,15 @@ CREATE TABLE IF NOT EXISTS `Fitness_ExerciseTypes` (
   `Relative_Dificulty` FLOAT NOT NULL DEFAULT '1.0',
 
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `ix_Fitness_Exercise_Types_Name_UNIQUE` (`Name` ASC) ,
-  INDEX `fk_Fitness_Exercise_Types_Types1_idx` (`Type` ASC) ,
-  CONSTRAINT `fk_Fitness_Exercise_Types_Types1_Types1`
+  UNIQUE INDEX `ix_Fitness_ExerciseTypes_Name_UNIQUE` (`Name` ASC) ,
+  INDEX `fk_Fitness_ExerciseTypes_Types1_idx` (`Type` ASC) ,
+  CONSTRAINT `fk_Fitness_ExerciseTypes_Types1_Types1`
     FOREIGN KEY (`Type`)
     REFERENCES `Fitness_Types` (`Name`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   INDEX `fk_Fitness_Exercise_Types_Muscle_Group_idx` (`Muscle_Group` ASC) ,
-  CONSTRAINT `fk_Fitness_Exercise_Types_Muscle_Group`
+  CONSTRAINT `fk_Fitness_ExerciseTypes_Muscle_Group`
     FOREIGN KEY (`Muscle_Group`)
     REFERENCES `Fitness_Types` (`Name`)
     ON DELETE NO ACTION
@@ -138,9 +138,9 @@ CREATE TABLE IF NOT EXISTS `Fitness_Workouts` (
     REFERENCES `Fitness_Users` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Fitness_Workout_Exercise_Types`
+  CONSTRAINT `fk_Fitness_Workout_ExerciseTypes`
     FOREIGN KEY (`Exercise_Type`)
-    REFERENCES `Fitness_Exercise_Types` (`Name`)
+    REFERENCES `Fitness_ExerciseTypes` (`Name`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
