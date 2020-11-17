@@ -1,5 +1,5 @@
 const mysql = require('./mysql');
-const PREFIX = process.env.MYSQL_TABLE_PREFIX || 'Fall2020_';
+const PREFIX = process.env.MYSQL_TABLE_PREFIX || 'Fitness_';
 const Types = { EMAIL: 'Email', CELL_PHONE:'Cell Phone' };
 
 async function getAll(){
