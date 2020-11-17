@@ -5,6 +5,8 @@ require('dotenv').config();
 
 const users = require('./controllers/users');
 const users = require('./controllers/posts');
+const comments = require('./controllers/comments');
+const reactions = require('./controllers/reactions');
 
 const app = express()
 const port = process.env.PORT || 3000;
@@ -14,12 +16,6 @@ console.log(process.env.BEST_CLASS);
 //  Middleware
 app.use(express.json());
 app.use(express.static( __dirname + '/../docs/'))
-
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
 
 //  Authentication
 app.use(function(req, res, next) {
@@ -37,6 +33,8 @@ app.get('/hello', (req, res, next) => {
 
 app.use('/users', users);
 app.use('/posts', posts);
+app.use('/comments', comments);
+app.use('/reactions', reactions);
 
 app.get('*', (req, res, next) => {
     const filename = path.join(__dirname, '/../docs/index.html');
@@ -48,6 +46,7 @@ app.use( (err, req, res, next) =>{
     console.log(err);
     res.status(err.status || 500).send( { message: err.message } )
 } )
+
 
 //  Init
 app.listen(port, () => {

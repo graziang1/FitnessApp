@@ -1,5 +1,6 @@
 const express = require('express');
 const users = require('../models/users');
+
 const router = express.Router();
  //these routes will be attached to a greater program
 
@@ -15,7 +16,7 @@ router
         .catch(next);
     })
     .get('/types', (req, res, next) => {
-        users.getTypes(req.query.q).then(x=> res.send( x ) )
+        users.getTypes().then(x=> res.send( x ) )
         .catch(next);
     })
     .get('/search', (req, res, next) => {
@@ -26,6 +27,7 @@ router
         users.add(
             req.body.FirstName, 
             req.body.LastName,
+            req.body.DOB,
             req.body.Password,
             users.Types.USER,
         ).then(newUser => { //creates new user
@@ -56,6 +58,7 @@ router
         users.update( req.params.id,
             req.body.FirstName, 
             req.body.LastName,
+            req.body.DOB,
             req.body.Password,
             users.Types.USER,
         ).then(newUser => { //creates new user
