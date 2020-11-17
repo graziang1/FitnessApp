@@ -2,7 +2,7 @@
   "repository": {
     "name": "FitnessApp",
     "type": "git",
-    "url": "https://github.com/graziang1/FitnessApp.git"
+    "url": "git+https://github.com/graziang1/FitnessApp.git"
   },
   "license": "ISC",
   "scripts": {
@@ -12,7 +12,8 @@
   "dependencies": {
     "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
