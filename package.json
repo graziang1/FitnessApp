@@ -6,7 +6,7 @@
   },
   "license": "ISC",
   "scripts": {
-    "dev": "nodemon --watch server server/index.js",
+    "dev": "nodemon server/index.js --watch server",
     "start": "node server/index.js"
   },
   "dependencies": {

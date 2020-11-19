@@ -4,7 +4,7 @@ const path = require('path');
 require('dotenv').config();
 
 const users = require('./controllers/users');
-const users = require('./controllers/posts');
+const posts = require('./controllers/posts');
 const comments = require('./controllers/comments');
 const reactions = require('./controllers/reactions');
 
