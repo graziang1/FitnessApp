@@ -48,13 +48,13 @@
           <button class="button btn-outline-secondary" style="float:right" type="button" id="inputGroupFileAddon04">View My Posts</button>
       </h2>
       <div class="columns">
-            <div class="column is-two-thirds">
+            <div class="column is-one-half">
                 <Post v-for=" (x, i) in posts " 
                       :key="i"
                       :i="i"
                       :post="x" /> 
             </div>
-            <div class="column is-one-third" @mouseenter="error">
+            <div class="column is-one-quarter" @mouseenter="error">
                 <Sidebar />
             </div>
         </div>
