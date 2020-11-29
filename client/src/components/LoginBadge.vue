@@ -10,14 +10,14 @@
             <p class="has-text-weight-bold">{{session.user.name}}</p>
             <p class="is-size-7">@{{session.user.handle}}</p>
         </div>
-        </div>
-
-        <div class="buttons" v-else>
-            <router-link to="/login"  class="button is-light" id="btn-login">
-                Log in
-            </router-link>
-        </div>
     </div>
+
+    <div class="buttons" v-else>
+        <router-link to="/login"  class="button is-light" id="btn-login">
+            Log in
+        </router-link>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -39,8 +39,7 @@ export default {
     }
 
     #btn-login {
-    background-color:aqua;
-    border:1px;
-    color: darkslategray;
-  }
+        background-color:aqua;
+        color: darkslategray;
+    }
 </style>

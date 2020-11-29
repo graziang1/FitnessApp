@@ -7,7 +7,8 @@
       from the elaborate conversations to the constant social media posts mid-exercise, she couldn't take much more.
       Gianna didn't want to be rude to her friends, but wanted a way to complete her workouts in peace!
       With her computer science background and love for the fitness world, it was only fitting to create a fitness app.
-      FitnessAtEase includes exercises that you can do in the convenience of your own home. 
+      FitnessAtEase includes popular exercises each week that you can do in the convenience of your own home.
+      For even more workouts, you can also check out the Fitness Tracker Feed! 
       This app was created with users of all fitness levels in mind.
       To utilize all of our features, please click the <i>Sign up</i> button.
       We provide a clean platform to keep track of your completed exercises and water intake, in addition to providing you with popular at-home exercises.

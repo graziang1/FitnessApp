@@ -28,7 +28,7 @@
         <div class="field">
         <p class="control">
             <button class="button" id="btn-login" @click.prevent="login">
-            Login
+                Login
             </button>
         </p>
         </div>
