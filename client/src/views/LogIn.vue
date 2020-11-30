@@ -56,7 +56,7 @@ export default {
                 profile: 'https://64.media.tumblr.com/7174fc1b0760acf76b88a940fcb80269/945f0943bc6a51cf-cb/s1280x1920/68d02db63b7324a4603a53d457d4ed701396629f.png'
             }
             session.addNotification('Yay! You logged in', 'success')
-            this.$router.push('feed')
+            this.$router.push('fitness-tracker')
         },
         fbLogin(){
             FB.login( authInfo =>{
@@ -68,7 +68,7 @@ export default {
                         profile: x.picture.data.url
                     }
                     session.addNotification('Yay! You logged in', 'success')
-                    this.$router.push('feed')
+                    this.$router.push('fitness-tracker')
                     console.log(x)
                 }  )
             }, { scope: 'public_profile,email,user_photos'})
