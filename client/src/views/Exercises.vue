@@ -1,6 +1,7 @@
 <template>
   <div class="card-body">
     <div class="workouts">
+        <br>
         <h2 class="title is-2">Popular Exercises of the Week</h2>
     </div>
     

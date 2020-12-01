@@ -1,6 +1,7 @@
 <template>
   <body>
     <form class="watertracker">
+        <br>
         <h2 class="title is-2">STAY HYDRATED! Log the amount of water you drink throughout the day</h2>
         <br>
         <img class="wrap" src="../assets/water.jpg" style="width:125px;height:125px;border-radius:50%;" alt="waterbottle">

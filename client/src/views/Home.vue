@@ -1,6 +1,7 @@
 <template>
   <div class="parallax">
     <div class="hometext">
+      <br>
       <h1 class="title" style="color:aqua;">
         FitnessAtEase
       </h1>
