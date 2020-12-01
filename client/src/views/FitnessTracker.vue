@@ -84,9 +84,9 @@ import session from "@/models/session";
 export default {
     data(){
         return {
-            //posts,
             posts: [],
-            fbPics: []
+            fbPics: [],
+            posts
         }
     },
     async created(){

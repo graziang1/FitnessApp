@@ -15,7 +15,7 @@ export function react(post_id){
 export function comment(post_id, text){
     return myFetch('comments', { Post_id: post_id, Owner_id: 1, Text: text })
 } 
-/*
+
 export const posts = [
     {
         url: 'https://64.media.tumblr.com/76447cba236f8ef3aa71de698ad0cdd7/7babfc47ab70d400-98/s1280x1920/311c739295d6686d981cca059941f01c4a9fcaac.jpg',
@@ -54,5 +54,3 @@ export const posts = [
         }
     },
 ];
-
-*/
