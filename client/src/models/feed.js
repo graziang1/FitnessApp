@@ -5,7 +5,7 @@
 import { myFetch } from "./my-fetch";
 import session from "./session";
 
-export const getPosts = ()=> myFetch(`posts/`);
+export const getPosts = ()=> myFetch(`posts/byUser/1`);
 
 export function react(post_id){
     //console.log(session.user)
