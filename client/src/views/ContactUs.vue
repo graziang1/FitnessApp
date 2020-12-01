@@ -106,7 +106,7 @@
   <div class="field-body">
     <div class="field">
       <div class="control">
-        <button class="button">
+        <button class="button" @click.prevent="send">
           Send Message
         </button>
       </div>
@@ -117,10 +117,16 @@
 </template>
 
 <script>
+import session from "@/models/session";
 export default {
   name: 'ContactUs',
   components: {
-    
+  },
+
+  methods: {
+      send(){
+          session.addNotification('Your message has been sent!', 'success')
+      }
   }
 }
 </script>
