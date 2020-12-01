@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `Fitness_Types` (
   `Type_id` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_Fitness_Types_Types1_idx` (`Type_id` ASC) ,
-  UNIQUE INDEX `EX_Fitness_Name_UNIQUE` (`Name` ASC) ,
+  UNIQUE INDEX `Fitness_Name_UNIQUE` (`Name` ASC) ,
   CONSTRAINT `fk_Fitness_Types_Types1`
     FOREIGN KEY (`Type_id`)
     REFERENCES `Fitness_Types` (`id`)

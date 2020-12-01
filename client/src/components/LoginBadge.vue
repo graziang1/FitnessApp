@@ -1,5 +1,6 @@
 <template>
   <div id="LoginBadge">
+      
     <div class="media" v-if="session.user">
         <div class="media-left">
             <figure class="image">
@@ -41,5 +42,6 @@ export default {
     #btn-login {
         background-color:aqua;
         color: darkslategray;
+        margin-bottom: 16px;
     }
 </style>
