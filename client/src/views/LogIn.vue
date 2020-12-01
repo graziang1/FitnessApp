@@ -131,7 +131,7 @@ export default {
         background-color:aqua;
         border:1px;
         color: darkslategray;
-        padding: 5px;
+        padding: 10px;
         margin: 3px;
     }
     figure.image {
