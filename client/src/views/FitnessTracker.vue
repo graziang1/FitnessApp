@@ -21,7 +21,7 @@
         </select>
       </div>
     </div>
-    </div>
+   </div>
 
     
     <input class="input is-info" type="text" placeholder="Exercise Completed"><br><br>
@@ -37,7 +37,7 @@
       </div>
       <br>
       <div class="input-group-append">
-        <button class="button btn-outline-secondary" type="button" id="inputGroupFileAddon04">Post</button>
+        <button class="button btn-outline-secondary" type="button" id="inputGroupFileAddon04" @click.prevent="posted">Post</button>
       </div>
     </div>
 
@@ -47,13 +47,13 @@
       <h2 class="title is-2">Feed
           <button class="button btn-outline-secondary" style="float:right" type="button" id="inputGroupFileAddon04">View My Posts</button>
       </h2>
-      <div class="columns">
+        <div class="columns">
             <div class="column is-one-half">
 
                 <div class="card">
                     <header class="card-header">
                         <p class="card-header-title">
-                            Add a picture
+                            Add A Photo
                         </p>
                     </header>
                     <p class="card-content">
@@ -73,7 +73,7 @@
                 <Sidebar />
             </div>
         </div>
-  </div>
+    </div>
 </div>
 </template>
 <script>
@@ -87,6 +87,7 @@ export default {
             posts: [],
             fbPics: [],
             posts
+            
         }
     },
     async created(){
@@ -107,6 +108,9 @@ export default {
             this.posts.push({
                 URL: p.images[0].source
             })
+        },
+        posted(){
+            session.addNotification('Posted Successfully!', 'success')
         }
     }
 }
