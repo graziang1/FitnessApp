@@ -2,18 +2,31 @@
 <form>
 <br>
 <div class="field is-horizontal">
+
   <div class="field-label is-normal">
     <label class="label">From</label>
   </div>
   <div class="field-body">
     <div class="field">
       <p class="control is-expanded has-icons-left">
-        <input class="input is-info" type="text" placeholder="Name">
+            <b-autocomplete
+                v-model="name"
+                :data="filteredDataArray"
+                @select="option => selected = option"
+                placeholder="Name"
+                icon="magnify"
+                clearable
+                >
+                <template slot="empty">No results found</template>
+            </b-autocomplete>
+                
         <span class="icon is-small is-left">
           <i class="fas fa-user"></i>
         </span>
       </p>
     </div>
+
+
     <div class="field">
       <p class="control is-expanded has-icons-left has-icons-right">
         <input class="input is-info" type="email" placeholder="Email" value="example@fitnessatease.com">
@@ -46,26 +59,6 @@
         </p>
       </div>
       <p class="help">Please include your area code.</p>
-    </div>
-  </div>
-</div>
-
-<div class="field is-horizontal">
-  <div class="field-label">
-    <label class="label">Are you an existing<br>FitnessAtEase member?</label>
-  </div>
-  <div class="field-body">
-    <div class="field is-narrow">
-      <div class="control">
-        <label class="radio">
-          <input type="radio" name="member">
-          Yes
-        </label>
-        <label class="radio">
-          <input type="radio" name="member">
-          No
-        </label>
-      </div>
     </div>
   </div>
 </div>
@@ -117,7 +110,11 @@
 </template>
 
 <script>
+import Sidebar from "@/components/Sidebar";
+import Post from "@/components/Post";
+import { posts } from "@/models/feed";
 import session from "@/models/session";
+
 export default {
   name: 'ContactUs',
   components: {
@@ -127,8 +124,52 @@ export default {
       send(){
           session.addNotification('Your message has been sent!', 'success')
       }
-  }
+  },
+        data() {
+            return {
+                //data: [],
+                data: [
+                    'Gianna',
+                    'Tom',
+                    'Brittany',
+                    'Ashley',
+                    'Gordon',
+                    'Karen',
+                    'Sue',
+                    'Donald',
+                    'Joe',
+                    'John',
+                    'Kamela',
+                ],
+                name: '',
+                selected: null
+            }
+        },
+        computed: {
+            filteredDataArray() {
+                return this.data.filter((option) => {
+                    return option
+                        .toString()
+                        .toLowerCase()
+                        .indexOf(this.name.toLowerCase()) >= 0
+                })
+            }
+        },
+        async created(){
+        this.posts = await getPosts();
+        FB.api("me/photos?fields=link,images,picture", x=>{
+            this.fbPics = x.data
+            console.log(x)
+        })
+    },
+    }
+</script>
+
+
+
+
 }
+
 </script>
 
 <style>
