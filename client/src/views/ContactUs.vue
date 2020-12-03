@@ -3,7 +3,7 @@
 <br>
 <div class="field is-horizontal">
 
-  <div class="field-label is-normal">
+  <div class="field-label is-input">
     <label class="label">From</label>
   </div>
   <div class="field-body">
@@ -15,8 +15,12 @@
                 @select="option => selected = option"
                 placeholder="Name"
                 icon="magnify"
-                clearable
-                >
+                clearable key="">
+                <template v-for=" (x, i) in list " 
+                    :i="i"
+                    :data="x">
+                  {{x.FirstName}}
+                </template>
                 <template slot="empty">No results found</template>
             </b-autocomplete>
                 
@@ -25,6 +29,7 @@
         </span>
       </p>
     </div>
+
 
 
     <div class="field">
@@ -110,68 +115,38 @@
 </template>
 
 <script>
-import Sidebar from "@/components/Sidebar";
-import Post from "@/components/Post";
-import { posts } from "@/models/feed";
+import { getList } from "@/models/users";
 import session from "@/models/session";
-
 export default {
   name: 'ContactUs',
-  components: {
-  },
-
   methods: {
       send(){
           session.addNotification('Your message has been sent!', 'success')
-      }
-  },
-        data() {
+      },
+
+      async created(){
+            this.data.list = await getList(); 
+      },
+
+      data() {
             return {
-                //data: [],
-                data: [
-                    'Gianna',
-                    'Tom',
-                    'Brittany',
-                    'Ashley',
-                    'Gordon',
-                    'Karen',
-                    'Sue',
-                    'Donald',
-                    'Joe',
-                    'John',
-                    'Kamela',
-                ],
-                name: '',
-                selected: null
+                  list: [],
             }
-        },
-        computed: {
-            filteredDataArray() {
-                return this.data.filter((option) => {
-                    return option
+      },
+      computed: {
+          filteredDataArray() {
+                return this.list.filter((option) => {
+                    return data
                         .toString()
                         .toLowerCase()
                         .indexOf(this.name.toLowerCase()) >= 0
                 })
-            }
-        },
-        async created(){
-        this.posts = await getPosts();
-        FB.api("me/photos?fields=link,images,picture", x=>{
-            this.fbPics = x.data
-            console.log(x)
-        })
-    },
-    }
-</script>
-
-
-
-
+          }
+      }
+  }
 }
-
+    
 </script>
-
 <style>
   .button {
     background-color:aqua;
